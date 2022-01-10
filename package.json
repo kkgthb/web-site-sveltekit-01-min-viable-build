@@ -1,0 +1,15 @@
+{
+    "name": "sveltekit-mvb",
+    "version": "0.0.1",
+    "author": "Katie Kodes",
+    "scripts": {
+      "dev": "svelte-kit dev",
+      "build": "svelte-kit build"
+    },
+    "type": "module",
+    "dependencies": {
+      "@sveltejs/adapter-auto": "next",
+      "@sveltejs/kit": "next",
+      "svelte": "next"
+    }
+  }
