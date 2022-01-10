@@ -1,11 +1,5 @@
-import netlify from "@sveltejs/adapter-netlify";
-
-const config = {
-  kit: {
-    // hydrate the <div id="svelte"> element in src/app.html
-    //target: "#svelte",
-    adapter: netlify(),
-  },
-};
+// Svelte runs as long as you export at least an empty object, 
+// but you probably will want to configure fancy things later.
+const config = {};
 
 export default config;

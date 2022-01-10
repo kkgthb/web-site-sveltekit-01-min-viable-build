@@ -6,6 +6,19 @@
 		%svelte.head%
 	</head>
 	<body>
-		<div id="svelte">%svelte.body%</div>
+		<!-- 
+			Because we do not use svelte.config.js to tell SvelteKit that
+			the HTML ID "#svelte" is special, it's a little silly to put it here,
+			but having a "wrapper" like this is pretty conventional
+			once you start actually developing applications,
+			so I included it.
+
+			But SvelteKit will still compile an HTML page
+			even if you don't include the DIV and put the "body" variable
+			directly between HTML BODY tags.
+		-->
+		<div id="svelte">
+			%svelte.body%
+		</div>
 	</body>
 </html>
